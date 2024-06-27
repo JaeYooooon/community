@@ -1,4 +1,4 @@
-package com.jy.community.domain.user.type;
+package com.jy.community.type;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

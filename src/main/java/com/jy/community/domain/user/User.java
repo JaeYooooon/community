@@ -1,6 +1,6 @@
 package com.jy.community.domain.user;
 
-import com.jy.community.domain.user.type.Role;
+import com.jy.community.type.Role;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
