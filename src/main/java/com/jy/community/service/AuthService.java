@@ -46,6 +46,7 @@ public class AuthService {
     User user = User.builder()
         .username(joinDto.getUsername())
         .password(passwordEncoder.encode(joinDto.getPassword()))
+        .nickname(joinDto.getNickname())
         .role(Role.USER)
         .build();
 
