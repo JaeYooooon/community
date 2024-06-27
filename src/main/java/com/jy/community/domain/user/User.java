@@ -1,6 +1,7 @@
 package com.jy.community.domain.user;
 
 import com.jy.community.type.Role;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -24,8 +25,12 @@ public class User {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+
+  @Column(nullable = false, unique = true)
   private String username;
   private String password;
+
+  @Column(nullable = false, unique = true)
   private String nickname;
 
   @Enumerated(EnumType.STRING)
